@@ -10,7 +10,7 @@ def draw_contours(im,contours,color=(0,255,0),n=-1):
     cv2.imshow('contours',im)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
-def draw_largest_contour(im,contours,color=(255,0,0),thickness=3):
+def draw_largest_contour(im,contours,color=(0,0,255),thickness=3):
     index = 0
     largestContourIndex = -1
     maxLen = 0
@@ -42,3 +42,4 @@ def main(file_name='arsenal-mesut-ozil.jpg'):
     draw_largest_contour_from_file(file_name)
 if __name__ ==  "__main__":
     main()
+    main('clip_r.jpg')
